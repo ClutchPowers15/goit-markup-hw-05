@@ -537,14 +537,30 @@
           </div>
           <div class="box-textarea-modal">
             <label class="label-modal" for="user-comment">Comment</label>
-          </div>
-          <div class="box-checkbox-modal">
             <textarea
               class="textarea-modal"
               id="user-comment"
               name="user-comment"
               placeholder="Text input"
             ></textarea>
+          </div>
+          <div class="box-checkbox-modal">
+            <input
+              class="input-checkbox-modal visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+            />
+            <label class="label-accept-privacy" for="user-privacy">
+              <span class="span-icon-checkbox">
+                <svg class="icon-accept" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="link-privacy-modal" href="#">Privacy Policy</a>
+            </label>
           </div>
           <button class="hero-button form-send-button">Send</button>
         </form>
